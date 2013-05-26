@@ -8,19 +8,25 @@ Git permet à des groupes de travaux / personnes de travailler sur les mêmes pr
 Il est possible d’utiliser git pour une gestion personnel du versionning de fichier, mais le projet a beaucoup évolué de son utilité de base, maintenant il est souvent utilisé pour des projets avec plusieurs membres et plusieurs développeurs.
 
 ## 2.	Git en local ##
+
+L’utilisation de git en local va vous permettre de gérer les versions de vos fichiers. Et d’avoir une vue d’ensemble à tout moment sur votre état d’avancement.
+
 Utiliser git sous Windows : [http://windows.github.com](http://windows.github.com/)  
-> [http://git-scm.com/downloads](http://git-scm.com/downloads)  
+> [Télécharger git](http://git-scm.com/downloads)  
+> [Télécharger GUI Client](http://git-scm.com/downloads/guis)
 
-L’utilisation de git en local va vous permettre de gérer les versions de vos fichiers. Et d’avoir une vue d’ensemble à tout moment sur votre état d’avancement.  
+Utiliser git sous Ubuntu : [Git sous Ubuntu](http://doc.ubuntu-fr.org/git)
 
-Il peut être intéressant de savoir créer une clé SSH (publique / Privée).
+> Avec la doc Ubuntu, de nombreuses commandes git sont expliquées
 
->**Conseil** :  
+**Que Git soit utiliser sous Windows ou Ubuntu, ou tout autre système d'exploitation, les commandes Git restent les mêmes.**
+  
+
+>**Git sous linux** :  
 >
-- Se mettre rapidement à Ubuntu,
 - il est plus aisé de travailler,  
 - plus simple, plus rapide, plus fluide.  
-- L’environnement Linux est prévu pour.  
+- l’environnement Linux est prévu pour.
 
 ## 3. Quelques cas concrets ##
 
@@ -50,7 +56,35 @@ Vous pouvez ajouter vos collaborateurs sur le projet. Ainsi, ils seront autoris�
 
 > Pour en savoir plus : [https://help.github.com/articles/generating-ssh-keys](https://help.github.com/articles/generating-ssh-keys)
 
-## 5. En plus ##
+## 5. Créer un repository ##
+
+### Création du repository ###
+Depuis github, se connecter avec son compte, se rendre sur la page de son profil et cliquer sur l'onglet "Repositories", puis créer un nouveau repository, via le bouton "New".
+
+> Il est possible lors de la création de choisir de créer par défaut ou non le fichier README.md
+
+#### Si le fichier README.md n'est pas créé ####
+Une fois le repository créé, il suffit de lancer ces commandes : 
+
+	touch README.md
+	git init
+	git add README.md
+	git commit -m "add file readme"
+	git remote add origin git@github.com:NOM_USER_GIT/NOM_REPO.git
+	git push -u origin master
+
+#### Si le fichier README.md est déjà créé ####
+	git remote add origin git@github.com:Brydjy/test.git
+	git push -u origin master
+
+
+## 6. Cloner un repository déjà existant
+
+Quand le repository est déjà existant, vous pouvez le cloner pour récupérer son contenu, sur github, les repository sont en général public (la partie privée est payante). 
+
+	git clone git@github.com:NOM_USER/NOM_REPO.git
+
+## 7. En plus ##
 
 ### Astuce ubuntu : ###
 - Install tmux, shell partagé
@@ -76,18 +110,6 @@ OU
 -	Fichier de config emacs
 -	Commande de base
 
-### Utiliser le site github : ###
--	On s’inscrit sur le site
--	Ensuite on se connecte
--	On crée un nouveau Repository (create new repo)
--	On peut générer si on veut le **README.md**
--	Ensuite il suffit de récupérer le repository en local
-
-		git remote add origin https://github.com/NOM_PROFILE/NOM_PROJET.git
--	Et on fait le premier Push (avec la possibilité de se souvenir de notre choix)  
-
-		git push –u origin master
-
 ## Erreur Courante ##
 **Attention** Sur Ubuntu, quand on crée sa clé sans la commande sudo, il faut faire de même quand clone ou crée des repository.  
 Globalement, il est important de retenir, que l'utilisateur est susceptible d'avoir des erreurs s'il essai de clone ou push sur le serveur en utilisant sudo. Dans ce cas il est possible d'avoir une erreur de ce type :   
@@ -96,7 +118,7 @@ Globalement, il est important de retenir, que l'utilisateur est susceptible d'av
 
 Pour plus d'explications voir [ici](https://help.github.com/articles/error-permission-denied-publickey)
 
-### Commande pratique ###
+## Commande pratique ##
 
 Pour configurer basique : [https://help.github.com/articles/set-up-git#platform-windows](https://help.github.com/articles/set-up-git#platform-windows)
 
