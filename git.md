@@ -145,7 +145,7 @@ Pour configurer basique : [https://help.github.com/articles/set-up-git#platform-
 **Git revert NUMERO_COMMIT** : Annule le commit portant ce numéro malgré un push (effet inverse)  
 **Git checkout ID fichier** : Permet de récupérer une ancienne version du fichier  
 **Git branch NOM_BRANCH** : Permet de créer une autre branche pour travailler, une branche temporaire par exemple  
-**Git branch** : Permet de visualiser les branches existantes / disponibles (courante avec un *)  
+**Git branch** : Permet de visualiser les branches existantes / disponibles (courante avec un * )  
 **Git checkout NOM_BRANCH** : Permet de changer de branche   
 **Git checkout NOM_FICHIER** : Annuler les modifications d’un fichier avant un commit  
 **Git merge NOM_BRANCH** : permet de merger les fichiers depuis la branche souhaitée  
