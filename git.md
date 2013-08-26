@@ -156,3 +156,17 @@ Pour configurer basique : [https://help.github.com/articles/set-up-git#platform-
 Un push est irréversible. Une fois que vos commits sont publiés, il deviendra impossible de les supprimer ou de modifier le message de commit ! Réfléchissez donc à deux fois avant de faire un push. C’est pour cela qu’il est recommandé de ne faire un push qu’une fois par jour, afin de ne pas prendre l’habitude d’envoyer définitivement chacun de vos commits trop vite.  
 
 En effet, il est tout de même possible d’annuler un commit + push, via la commande git revert  NUMERO_COMMIT, ensuite, il suffit de push. 
+
+### Les liens ###
+
+[Infos Git](http://www.grafikart.fr/search?q=git)
+[Infos Git](http://www.siteduzero.com/informatique/tutoriels/gerez-vos-codes-source-avec-)
+[Git Challenge & Try](http://try.github.com/levels/1/challenges)
+[Code School – apprendre avec plaisir](https://www.codeschool.com/users/sign_in)
+[La doc (anglais)](http://git-scm.com/doc)
+**Tuto Gitlab :**
+- http://gitlab.org/  
+- [Suivre le tuto ici](https://github.com/gitlabhq/gitlabhq/blob/stable/doc/install/installation.md)  
+- [Problème connu](https://github.com/gitlabhq/gitlabhq/issues/2535)  
+- [Bonne version à suivre](https://github.com/gitlabhq/gitlabhq/blob/4-0-stable/doc/install/installation.md)
+
