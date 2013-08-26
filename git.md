@@ -163,8 +163,10 @@ En effet, il est tout de même possible d’annuler un commit + push, via la com
 [Infos Git](http://www.siteduzero.com/informatique/tutoriels/gerez-vos-codes-source-avec-)
 [Git Challenge & Try](http://try.github.com/levels/1/challenges)
 [Code School – apprendre avec plaisir](https://www.codeschool.com/users/sign_in)
-[La doc (anglais)](http://git-scm.com/doc)
-**Tuto Gitlab :**
+[La doc (anglais)](http://git-scm.com/doc)  
+
+**Tuto Gitlab :**  
+
 - http://gitlab.org/  
 - [Suivre le tuto ici](https://github.com/gitlabhq/gitlabhq/blob/stable/doc/install/installation.md)  
 - [Problème connu](https://github.com/gitlabhq/gitlabhq/issues/2535)  
